@@ -1,0 +1,26 @@
+.bg-image {
+    background-color: #021f3a;
+    height: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+.round-image img{
+    background-position: center center;
+    background-size: contain;
+    border-radius: 50%;
+    border: 3px solid;
+    border-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+}
+
+.profile-photo {
+    border-radius: 50% !important;
+    overflow: hidden;
+    height: 50%;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }

@@ -1,5 +1,7 @@
 {
   "name": "FastNews",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

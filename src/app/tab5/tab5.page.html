@@ -1,0 +1,26 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-title>
+      <div class="ion-text-center">
+        Cuenta
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense" class="ion-no-border">
+    <ion-toolbar>
+      <div class="ion-text-center">
+        <ion-title size="large">Cuenta</ion-title>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card-header>
+    <ion-img src="././assets/img/profile.png" class="profile-photo"></ion-img>
+    <ion-card-title class="ion-text-center">Perfil</ion-card-title>
+  </ion-card-header>
+  <ion-button (click)="SignOut()" expand="block" fill="clear" color="danger">
+    Cerrar sesión
+  </ion-button>
+</ion-content>

@@ -1,17 +1,60 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header class="ion-no-border" class="ion-no-border">
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab 2
+      <div class="ion-text-center">
+        Categorías
+      </div>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-header collapse="condense" class="ion-no-border">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <div class="ion-text-center">
+        <ion-title size="large">Categorías</ion-title>
+      </div>
     </ion-toolbar>
   </ion-header>
+  <ion-segment [value]="selectedCategory" (ionChange)="segmentChanged($event)" scrollable mode="md" class="text-secondary">
+   <ion-segment-button value="general" class="text-secondary">
+     <ion-label class="ion-text-capitalize">Principales</ion-label>
+   </ion-segment-button>
+   <ion-segment-button value="business" class="text-secondary">
+     <ion-label class="ion-text-capitalize">Economía</ion-label>
+   </ion-segment-button>
+   <ion-segment-button value="entertainment" class="text-secondary">
+    <ion-label class="ion-text-capitalize">Entretenimiento</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="health" class="text-secondary">
+    <ion-label class="ion-text-capitalize">Salud</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="science" class="text-secondary">
+    <ion-label class="ion-text-capitalize">Ciencia</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="sports" class="text-secondary">
+    <ion-label class="ion-text-capitalize">Deportes</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="technology" class="text-secondary">
+    <ion-label class="ion-text-capitalize">Tecnología</ion-label>
+  </ion-segment-button>
+ </ion-segment>
+ <app-articles [data]="data">
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+</app-articles>
+ <!-- <ion-list>
+  <ion-item *ngFor="let data of data">
+    <ion-avatar *ngIf="data.image">
+      <img [src]="data.image" />
+    </ion-avatar>
+    <ion-label>
+      <h5>{{data.source}}</h5>
+      <h1>{{data.title}}</h1>
+      <p>{{data.description}}</p>      
+    </ion-label>
+    <ion-button (click)="openArticle()" fill="clear" class="text-secondary">
+      <ion-icon slot="icon-only" name="globe-outline"></ion-icon>
+    </ion-button>
+  </ion-item>
+ </ion-list> -->
 </ion-content>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fastnews-119ef": {
+      "hosting": {
+        "app": [
+          "fastnews-119ef"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fastnews-119ef"
+  }
+}

@@ -1,0 +1,28 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+  <ion-title mode="md">
+    <br>
+       <div class="ion-text-center">
+        <img src="././assets/img/titlelogo.png" alt="FastNews" height="30">
+      </div>
+      <h1 class="ion-text-center" size="large">Iniciar Sesión</h1>
+  </ion-title>
+  </ion-toolbar>
+  </ion-header>
+  <ion-content>
+  <ion-item lines="full">
+  <ion-label position="floating" color="secondary">Correo Electrónico</ion-label>
+  <ion-input [(ngModel)]="email" type="email" required></ion-input>
+  </ion-item>
+  <ion-item lines="full">
+  <ion-label position="floating" color="secondary">Contraseña</ion-label>
+  <ion-input [(ngModel)]="password" type="password" required></ion-input>
+  </ion-item>
+  <ion-row>
+  <ion-col>
+  <ion-button type="submit" color="primary" expand="block " (click)='login()'>Ingresar</ion-button>
+  <ion-button [routerLink]="['/signup']" color="secondary" expand="block" (click)='signup()'>Registrate</ion-button>
+  <!-- <a [routerLink]="['/forgot-password']" class="small-text">Perdiste la contraseña?</a> -->
+  </ion-col>
+  </ion-row>
+  </ion-content>
